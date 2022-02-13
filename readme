@@ -1,0 +1,14 @@
+A compilation of solved exercises from Boyd's Stanford Convex Optimization Course EE364A/B.
+EE364A: https://see.stanford.edu/Course/EE364A
+EE364B: https://see.stanford.edu/Course/EE364B
+Textbook: https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf
+Textbook Solutions: http://egrcc.github.io/docs/math/cvxbook-solutions.pdf
+
+
+Create conda environment using the included config.yml, e.g. "conda env create -f config.yml". Optionally obtain free MOSEK license; if not
+remove solver='MOSEK' from problem.solve() calls.
+
+
+# Links to other nice repo's which house data files from course (some links on Stanford webiste are dead)
+https://github.com/intfloat/coursera/tree/master/Convex-Optimization
+https://github.com/js117/CVX

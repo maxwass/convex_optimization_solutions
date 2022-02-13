@@ -1,0 +1,15 @@
+name: cvx
+channels:
+  - defaults
+  - conda-forge
+  - mosek
+  - anaconda
+dependencies:
+  - python=3.8
+  - cvx
+  - numpy
+  - pip
+  - matplotlib
+  - mosek
+  - scipy # currenlty unused
+  - h5py # for reading .mat files
