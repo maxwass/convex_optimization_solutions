@@ -130,6 +130,7 @@ def backtrack(A: np.array, x: np.array, dir: np.array, grad: np.array,
         t = b*t
     return t
 
+
 def gradient_descent(n: int = 100, m: int = 200,
                      alpha: float = .01, beta: float = .05,
                      eps: float = 1e-3, seed: int = 50):
@@ -168,7 +169,6 @@ def gradient_descent(n: int = 100, m: int = 200,
 
     plt.xlabel('iterations')
     plt.suptitle(f"Gradient Descent on -1'log(1-Ax) - 1'log(1-x^2) via Backtracking (a: {alpha:.2f}, b: {beta:.2f})")
-
 
 
 def newton_method(n: int = 100, m: int = 200,
@@ -242,4 +242,4 @@ if __name__ == "__main__":
         print(f'see')
 
     # 9.31 (b)
-    newton_method(n=100, m=200, eps=1e-10, hess_freq=1, hess_approx='diag')
+    newton_method(n=100, m=200, eps=1e-2, hess_freq=1, hess_approx='diag')
